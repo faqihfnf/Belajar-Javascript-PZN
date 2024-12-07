@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Contoh tanpa konversi - hasilnya menjadi 11 bukan 2. Karena string + number
+        const value1 = "1"
+        const value2 = 1;
+        const total = value1 + value2;
+        document.writeln(total); //11
+
+        const value3 = parseInt(1)
+        document.writeln(value2 + value3) //2
+
+        const value4 = 2
+        const value5 = 2
+        const total2 = value4.toString() + value5.toString()
+        document.writeln(total2) //22
+
+        const value6 = parseInt('faqih')
+        document.writeln(value6) //NaN -> karena "faqih" bukan angka
+
+        document.writeln(value6 + 1) //NaN -> karena operasi pada data NaN akan tetap menghasilkan NaN
+
+        document.writeln(isNaN(value6)) //true
+
+
+    </script>
+</body>
+
+</html>

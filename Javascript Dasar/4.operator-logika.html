@@ -9,10 +9,13 @@
 
 <body>
     <script>
+        const nilaiUjian = 80
+        const nilaiAbsen = 90
 
-        const name = "Faqih"
-
-        const template = `Nama saya ${name}`
+        const lulusUjian = nilaiUjian >= 80
+        const lulusAbsen = nilaiAbsen >= 80
+        const lulus = lulusUjian && lulusAbsen
+        document.writeln(lulus)
     </script>
 </body>
 
