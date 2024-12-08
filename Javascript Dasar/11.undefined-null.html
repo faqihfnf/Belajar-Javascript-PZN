@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined</title>
+</head>
+
+<body>
+    <script>
+        let name = 'Faqih'
+        if (name === undefined) {
+            console.info("UNDEFINED")
+        } else {
+            console.info("DEFINED")
+        }
+
+        const nama = ["Faqih", "Nur", "Fahmi"]
+        if (nama[3] === undefined) {
+            console.info("ARRAY UNDEFINED")
+        } else {
+            console.info("ARRAY DEFINED")
+        }
+
+        const person = { name: "Faqih" }
+        if (person.name === undefined) {
+            console.info("OBJECT UNDEFINED")
+        } else {
+            console.info("OBJECT DEFINED")
+        }
+
+        let firstname = null
+
+        if (firstname === undefined) {
+            alert("UNDEFINED")
+        } else if (firstname === null) {
+            alert("NULL")
+        } else {
+            alert(firstname)
+        }
+    </script>
+</body>
+
+</html>
