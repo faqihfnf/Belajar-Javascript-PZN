@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.info("Hello" || "");
+      console.info("" || []);
+      console.info("0" || "NOL");
+      console.info(0 || "NOL");
+      console.info(null || "null");
+      console.info(undefined || "undefined");
+      console.info(0 || false);
+
+      // contoh penggunaan:
+      const person = {
+        firstName: "Faqih",
+        lastName: "Nur Fahmi",
+      };
+
+      const fullName = person.firstName || person.lastName;
+      console.info(fullName);
+    </script>
+  </body>
+</html>
