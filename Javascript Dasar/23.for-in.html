@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //contoh for in untuk object
+        const person = {
+            firstName: "Faqih",
+            middleName: "Nur",
+            lastName: "Fahmi"
+        }
+        for (const property in person) {
+            document.writeln(`${property}: ${person[property]}`)
+        }
+
+        // contoh for in untuk array
+        const names = ["Faqih", "Nur", "Fahmi"]
+        for (const index in names)
+            document.writeln(`${index}: ${names[index]}`)
+
+    </script>
+</body>
+
+</html>
