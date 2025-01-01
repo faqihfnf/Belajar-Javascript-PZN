@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //membuat function sayHello yang memiliki 2 parameter/argumen
+        function sayHello(firstName, lastName) {
+            //menyimpan data dari parameter kedalam variable fullName
+            const fullName = `Hello ${firstName} ${lastName}`
+            //mengembalikan nilai fullName
+            return fullName
+        }
+        // dengan kode diatas berarti function sayHello akan mengembalikan nilai / value yaitu variable fullName
+
+        //membuat variable result yang memanggil function sayHello yang berisi value dari variable fullName
+        const result = sayHello("Faqih", "Nur Fahmi")
+        document.writeln(result)
+
+        //contoh jika return lebih dari 1 kali
+        function finalScore(value) {
+            if (value >= 90) {
+                return "A"
+            } else if (value >= 80) {
+                return "B"
+            } else if (value >= 70) {
+                return "C"
+            } else if (value >= 60) {
+                return "D"
+            } else {
+                return "E"
+            }
+        }
+
+        const finalResult = finalScore(80)
+        document.writeln(finalResult)
+
+    </script>
+</body>
+
+</html>
