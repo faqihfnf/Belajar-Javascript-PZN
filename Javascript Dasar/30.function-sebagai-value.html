@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //funtion sayHello sebagai value dalam variable say
+        function sayHello(name) {
+            document.writeln(`Hello ${name}`)
+        }
+        sayHello("Faqih")
+        const say = sayHello
+        say("Maryam")
+
+        function giveMeName(callback) {
+            callback("Faqih")
+        }
+        giveMeName(sayHello)
+        giveMeName(say)
+
+    </script>
+</body>
+
+</html>
