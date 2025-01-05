@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //contoh mengambil data satu per satu dari array tanpa destructuring
+        const names = ["Faqih", "Nur", "Fahmi"]
+        const firstName = names[0]
+        const middleName = names[1]
+        const lastName = names[2]
+
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+
+        //contoh mengambil data satu per satu dari array dengan destructuring
+        const nama = ["Faqih", "Nur", "Fahmi"]
+        const [namaDepan, namaTengah, namaBelakang] = nama
+        console.log(namaDepan);
+        console.log(namaTengah);
+        console.log(namaBelakang);
+
+        const person = {
+            firstNames: "Faqih",
+            middleNames: "Nur",
+            lastNames: "Fahmi",
+            address: {
+                city: "Bandung",
+                province: "Jawa Barat",
+                country: "Indonesia"
+            },
+            hobby: "game"
+        }
+
+        const firstNames = person.firstNames
+        const middleNames = person.middleNames
+        const lastNames = person.lastNames
+        console.log(firstNames);
+        console.log(middleNames);
+        console.log(lastNames);
+
+        const { address, ...others } = person
+        console.log(address.city);
+        console.log(address.province);
+        console.log(address.country);
+        console.log(others);
+
+        {
+            const names = ["Faqih"]
+            const [firstName, middleName = "Nur", lastName] = names
+            console.log(firstName);
+            console.log(middleName);
+            console.log(lastName);
+        }
+
+        {
+            // destructuring dengan merubah nama variable
+            const person = {
+                firstName: "Maryam",
+                middleName: "Rika",
+                lastName: "Yulianti",
+            };
+            let {
+                firstName: namaDepan,
+                middleName: namaTengah,
+                lastName: namaBelakang,
+            } = person;
+            console.log(namaDepan);
+            console.log(namaTengah);
+            console.log(namaBelakang);
+        }
+
+    </script>
+</body>
+
+</html>
