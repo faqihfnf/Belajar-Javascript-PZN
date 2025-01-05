@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const sayHello = (name) => {
+            const message = `Hello ${name}`
+            console.log(message)
+        }
+        sayHello("Faqih")
+
+        // contoh arrow function tanpa blok {}
+        const sayHay = (name, age) => console.log(`Hai ${name} ${age}`)
+        sayHay("Maryam")
+
+        // contoh arrow function dengan satu parameter bisa tanpa menggunakan ()
+        const sayHi = name => console.log(`Hi ${name}`)
+        sayHi("Fahmi")
+
+        // contoh arrow function dengan return dengan block {}
+        const sum = (first, second) => {
+            return first + second
+        }
+        console.log(sum(1, 2))
+
+        // contoh arrow function dengan return block {}
+        const total = (num1, num2) => num1 + num2
+        console.log(total(1, 2))
+
+        // arrow function sebagai parameter untuk function
+        function giveMeName(callback) {
+            callback("Rika")
+        }
+        giveMeName(name => console.log(name))
+    </script>
+</body>
+
+</html>
