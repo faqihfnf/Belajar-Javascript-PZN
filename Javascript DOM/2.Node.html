@@ -18,10 +18,14 @@
         // mengambil semua node yang termasuk di id menu beserta yang ada dibawahnya
         const menu = document.getElementById("menu")
         console.log(menu);
+        console.log(menu.childNodes);
 
         // mengambil node yang memiliki id first saja
-        const first = document.getElementById("first")
-        console.log(first);
+        const second = document.getElementById("second")
+        console.log(second.textContent)
+        console.log(second.previousSibling);
+        console.log(second.previousSibling.previousSibling);
+        console.log(second.nextSibling);
 
     </script>
 </body>
