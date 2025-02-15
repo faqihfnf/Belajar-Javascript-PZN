@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+</head>
+
+<body>
+    <div id="content" class="content">
+        <h1 id="title"></h1>
+        <p id="description"></p>
+    </div>
+    <script>
+
+        const title = document.getElementById("title")
+        title.textContent = "Title"
+        console.log(title.id); // id adalah property
+
+        const description = document.getElementById("description")
+        description.textContent = "Description"
+        description.remove() // method
+
+        const content = document.getElementById("content")
+
+        const judul = document.createElement("h2")
+        judul.textContent = "Judul dengan appendChild"
+        content.appendChild(judul)
+
+        const paragraf = document.createElement("p")
+        paragraf.textContent = "Menambahkan paragraf"
+        content.appendChild(paragraf)
+
+    </script>
+</body>
+
+</html>
