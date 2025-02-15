@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="https://www.programmerzamannow.com/img/pzn.png" id="image" alt="">
+    <img id="logo">
+
+    <script>
+
+        const logo = document.getElementById("image")
+
+        // const src = logo.getAttributeNode("src")
+        // const link = logo.getAttribute("src")
+
+        // console.info(src); 
+        // console.info(link);
+
+        const logo2 = document.getElementById("logo")
+        const src2 = document.createAttribute("src")
+        src2.value = "https://www.programmerzamannow.com/img/pzn.png"
+        logo2.setAttributeNode(src2)
+    </script>
+</body>
+
+</html>
