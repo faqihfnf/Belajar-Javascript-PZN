@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <script>
+        const content = document.getElementById("content")
+        content.textContent = "<h1>Hello World</h1> <p>Ini Paragraf</p>"
+        content.innerText = "<h1>Hello World</h1> <p>Ini Paragraf</p>"
+
+        // jika menggunakan Inner HTML maka DOM akan dirender sesuai dengan tag HTML nya dan tag HTML tidak ditambilkan sebagai text.
+        // tapi jika menggunakan Inner Text dan Text Content maka DOM akan dirender sebagai text
+        content.innerHTML = "<h1>Hello World</h1> <p>Ini Paragraf</p>"
+    </script>
+</body>
+
+</html>
