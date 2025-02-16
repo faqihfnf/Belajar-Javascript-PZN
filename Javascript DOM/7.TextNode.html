@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Faqih Nur Fahmi
+
+    <script>
+        const textNode = document.body.firstChild
+        //menggunakan firstChild karena text nodenya ada diawal
+        console.info(textNode.wholeText);
+
+        const text = document.createTextNode("Maryam Nur Fahmi")
+        document.body.appendChild(text)
+    </script>
+</body>
+
+</html>
