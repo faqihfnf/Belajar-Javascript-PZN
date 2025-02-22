@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--   -->
+    <form action="" name="commentForm">
+        <label for="comment">
+            Comment : <input type="text" name="comment" id="comment">
+        </label>
+        <br>
+        <label for="from">
+            From : <input type="text" name="from" id="from">
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="commentList">
+
+    </div>
+    <!--  -->
+
+    <form action="" name="commentForm2">
+        <label for="comment2">
+            Komentar : <input type="text" name="comment2" id="comment2">
+        </label>
+        <br>
+        <label for="from2">
+            Dari : <input type="text" name="from2" id="from">
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="commentList2">
+
+    </div>
+
+
+    <script>
+        document.querySelector("form[name=commentForm]").onsubmit = function (event) {
+            event.preventDefault()
+
+            const commentList = document.getElementById("commentList")
+
+            const comment = document.getElementById("comment").value
+
+            const from = document.getElementById("from").value
+
+            const commentItem = document.createElement("p")
+
+            commentItem.textContent = `${comment} : ${from}`
+
+            commentList.appendChild(commentItem)
+
+            document.querySelector("form[name=commentForm]").reset()
+        }
+
+        // form 2
+
+        document.forms["commentForm2"].onsubmit = function (event) {
+            event.preventDefault()
+
+            const commentList2 = document.getElementById("commentList2")
+
+            const comment2 = document.forms["commentForm2"]["comment2"].value
+
+            const from2 = document.forms["commentForm2"]["from2"].value
+
+            const commentItem2 = document.createElement("p")
+
+            commentItem2.textContent = `${comment2} : ${from2}`
+
+            commentList2.appendChild(commentItem2)
+
+            document.forms["commentForm2"].reset()
+        }
+
+    </script>
+</body>
+
+</html>
