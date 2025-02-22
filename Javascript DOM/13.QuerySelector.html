@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>This is Text</p>
+    <ul>
+        <li>Satu</li>
+        <li>Dua</li>
+        <li>Tiga</li>
+    </ul>
+    <ul>
+        <li>Empat</li>
+        <li>Lima</li>
+    </ul>
+
+    <ul>
+        <li class="menu">First</li>
+        <li id="menu">Second</li>
+        <li class="menu">Third</li>
+    </ul>
+
+    <a href="https://google.com"></a>
+
+    <script>
+        //universal selector
+        const element = document.querySelectorAll("*")
+        console.log(element);
+
+        // type selector
+        const list = document.querySelectorAll("li")
+        console.log(list);
+
+        //class selector
+        const menu = document.querySelectorAll(".menu")
+        console.log(menu);
+
+        //id selector
+        const menuId = document.querySelectorAll("#menu")
+        console.log(menuId);
+
+        // attribute selector
+        const menuClass = document.querySelectorAll("[class]")
+        console.log(menuClass);
+    </script>
+</body>
+
+</html>
