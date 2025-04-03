@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      class Employee {
+        constructor(firstName) {
+          this.firstName = firstName;
+        }
+        sayHello(name) {
+          console.info(`Hello ${name}, my name is Employee ${this.firstName}`);
+        }
+      }
+
+      class Manager extends Employee {
+        constructor(firstName, lastName) {
+          super(firstName); // memanggil constructor dari Employee
+          this.lastName = lastName;
+        }
+        sayHello(name) {
+          console.info(
+            `Hello ${name}, my name is Manager ${this.name} ${this.lastName}`
+          );
+        }
+      }
+
+      const faqih = new Employee("Faqih");
+      //   faqih.name = "Faqih";
+      faqih.sayHello("Joko");
+
+      const maryam = new Manager("Maryam", "Nur Fahmi");
+      // manager mempunyai constructor dari Employee walaupun tidak memiliki contructor sendiri
+      maryam.name = "Maryam";
+      maryam.sayHello("Rika");
+
+      console.info(faqih);
+      console.info(maryam);
+    </script>
+  </body>
+</html>
