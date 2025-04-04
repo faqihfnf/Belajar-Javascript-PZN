@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Employee {}
+      class Supervisor extends Employee {}
+      class Manager {}
+
+      const emp = new Employee();
+      const mgr = new Manager();
+      const sup = new Supervisor();
+
+      console.log(emp instanceof Employee); // true
+      console.log(emp instanceof Manager); // false
+      console.log(mgr instanceof Employee); // false
+      console.log(mgr instanceof Manager); // true
+
+      console.log(sup instanceof Employee); // true
+      console.log(sup instanceof Supervisor); // true
+      console.log(sup instanceof Manager); // false
+    </script>
+  </body>
+</html>
