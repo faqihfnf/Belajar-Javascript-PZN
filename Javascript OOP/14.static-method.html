@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class MathUtil {
+        static sum(...number) {
+          let total = 0;
+          for (let i = 0; i < number.length; i++) {
+            total += number[i];
+          }
+          return total;
+        }
+      }
+
+      const result = MathUtil.sum(1, 2, 3, 4, 5);
+      console.log(result); // 15
+    </script>
+  </body>
+</html>
