@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Configuration {
+        static name = "Default Configuration";
+        static version = "1.0.0";
+        static author = "John Doe";
+      }
+
+      Configuration.name = "New Configuration";
+
+      console.log(Configuration.name); // Default Configuration
+      console.log(Configuration.version); // 1.0.0
+      console.log(Configuration.author); // John Doe
+    </script>
+  </body>
+</html>
